@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'k*9^03vnu+h@!zmxy&o2ryodh4!0k23r8!ul!3qek%0e+)gmr_'
+SECRET_KEY = '$SecretKey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'Flood_forecast_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'flood_db',
-        'USER': 'flooddba',
-        'PASSWORD': 'Fl00d38+',
+        'NAME': '$DATABASE_NAME',
+        'USER': '$DATABASE_USER',
+        'PASSWORD': '$DATABASE_PASSWORD',
         'HOST': 'localhost',
         'PORT': '3306',
     }
